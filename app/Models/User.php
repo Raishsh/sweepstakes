@@ -45,4 +45,8 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function sweepstakes(){
+        return $this->hasMany(Sweepstakes::class);
+    }
 }
